@@ -6,11 +6,11 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.13.8
+      jupytext_version: 1.15.2
   kernelspec:
-    display_name: Python 3 (ipykernel)
+    display_name: GDS-10.0
     language: python
-    name: python3
+    name: gds
 ---
 
 ```python tags=["remove-cell"]
@@ -943,7 +943,7 @@ Below, we'll show one model-free way to identify empirical boundaries in your da
 
 First, let's consider the median household income for our census tracts in San Diego, shown in the following figure.
 
-```python caption="Median household incomes in San Diego." tags=[]
+```python caption="Median household incomes in San Diego."
 f, ax = plt.subplots(1, 2, figsize=(12, 4))
 san_diego_tracts.plot("median_hh_income", ax=ax[0])
 ax[0].set_axis_off()
